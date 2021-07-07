@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="general.css">
+	<link rel="stylesheet" href="stays.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<title>Stays</title>
+<link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/
+
+<body>
+
+	<div class="top-div">
+		<div id="logo-flex-div">
+			<div>
+				<a href="booking.html">
+					<img src="logo.jpg" class="logo-icon">
+				</a>
+			</div>
+			<nav id="menu-nav">
+				<label id="toggle">&#9776;</label>
+				<ul id="menu">
+					<li>
+						<a href="">Register</a>
+					</li>
+					<li>
+						<a href="">Sign in</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="top-buttons" >
+				<button class="new-user-btn">Register</button>
+				<button class="login-btn">Sign In</button>
+			</div>
+		</div>
+		<div style="display: flex;">
+			<div class="main-menu">
+				<img src="bed.png" style="width: 20px;">
+				<a href="Stays.html" class="main-menu-item">Stays</a>
+			</div>
+			<div class="main-menu">
+				<img src="about.png" style="width: 20px;">
+				<a href="about.html" class="main-menu-item">About us</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="display: flex;">
+		<div id="left-container">
+			<div id="details-container">
+				<p id="hide-details">&#8678;</p>
+				<label>Destination:</label><br>
+				<input type="text" value=""><br><br>
+				<label>Check in date:</label><br>
+				<input type="date" value=""><br><br>
+				<label>Check out date:</label><br>
+				<input type="date" value=""><br><br>
+				<label>Price per night:</label><br>
+				<input id="range" type="range" value="150" min="0" max="1000" step="1" list="numbers">
+				<output for="range"></output>
+				<br><br>
+				<div id="adult-child-div">
+					<div>
+						<label>Adults:</label><br>
+						<input type="number" min="1" max="30" value="1">
+					</div>
+					<div>
+						<label>Children:</label><br>
+						<input type="number" min="1" max="30" value="0">
+					</div>
+				</div>
+				<br><br>
+				<div>
+					<label>Minimum rating:</label><br>
+					<div class="rating">
+						<i class="rating__star fas fa-star"></i>
+						<i class="rating__star fas fa-star"></i>
+						<i class="rating__star fas fa-star"></i>
+						<i class="rating__star fas fa-star"></i>
+						<i class="rating__star far fa-star"></i>
+					</div>
+				</div>
+				<div id="buttons-div">
+					<button id="search-btn">Search</button>
+					<button id="reset-btn">Reset</button>
+				</div>
+			</div>
+			<p id="show-details" style="display: none;">&#x21E8;</p>
+		</div>
+
+		<div id="right-container">
+			<div class="right-card-content">
+				<div class="name-stars-div">
+					<a href="details.html" class="main-menu-item">
+						<h1>Hotel Paradis</h1>
+					</a>
+					<div>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+				<br><br>
+				<div class="image-description-div">
+					<img src="24.jpg">
+					<p class="location-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<br><br>
+				<div>
+					<p class="price">200 $</p>
+				</div>	
+			</div>
+			<br><br>
+			<div class="right-card-content">
+				<div class="name-stars-div">
+					<a href="details.html" class="main-menu-item">
+						<h1>Pensiunea Steluta</h1>
+					</a>
+					<div>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+						<span class="far fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+				<br><br>
+				<div class="image-description-div">
+					<img src="23.jpg">
+					<p class="location-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<br><br>
+				<div>
+					<p class="price">89 $</p>
+				</div>	
+			</div>
+			<br><br>
+			<div class="right-card-content">
+				<div class="name-stars-div">
+					<a href="details.html" class="main-menu-item">
+						<h1>Hotel Amaretto</h1>
+					</a>
+					<div>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+				<br><br>
+				<div class="image-description-div">
+					<img src="13.jpg" >
+					<p class="location-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<br><br>
+				<div>
+					<p class="price">145 $</p>
+				</div>	
+			</div>
+			<br><br>
+			<div class="right-card-content">
+				<div class="name-stars-div">
+					<a href="details.html" class="main-menu-item">
+						<h1>Pensiunea Radius</h1>
+					</a>					
+					<div>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+				<br><br>
+				<div class="image-description-div">
+					<img src="12.jpg">
+					<p class="location-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<br><br>
+				<div>
+					<p class="price">75 $</p>
+				</div>	
+			</div>
+			<br><br>
+			<div class="right-card-content">
+				<div class="name-stars-div">
+					<a href="details.html" class="main-menu-item">
+						<h1>Hotel Univers</h1>
+					</a>					
+					<div>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+					</div>
+				</div>
+				<br><br>
+				<div class="image-description-div">
+					<img src="41.jpg">
+					<p class="location-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<br><br>
+				<div>
+					<p class="price">175 $</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div id="footer-flex-div">
+			<div>
+				<a class="footer-links">
+					<p>Countries</p>
+				</a>			
+				<a class="footer-links">
+					<p>Regions</p>
+				</a>
+				<a class="footer-links">
+					<p>Cities</p>
+				</a>
+				<a class="footer-links">
+					<p>Districts</p>
+				</a>
+				<a class="footer-links">
+					<p>Airports</p>
+				</a>
+				<a class="footer-links">
+					<p>Hotels</p>
+				</a>
+				<a class="footer-links">
+					<p>Places of interest</p>
+				</a>
+			</div>
+			<div>
+				<a class="footer-links">
+					<p>Homes</p>
+				</a>			
+				<a class="footer-links">
+					<p>Apartments</p>
+				</a>
+				<a class="footer-links">
+					<p>Resorts</p>
+				</a>
+				<a class="footer-links">
+					<p>Villas</p>
+				</a>
+				<a class="footer-links">
+					<p>Hostels</p>
+				</a>
+				<a class="footer-links">
+					<p>B&Bs</p>
+				</a>
+				<a class="footer-links">
+					<p>Guest houses</p>
+				</a>
+			</div>
+			<div>
+				<a class="footer-links">
+					<p>Car rentals</p>
+				</a>
+				<a class="footer-links">
+					<p>Flight finder</p>
+				</a>
+				<a class="footer-links">
+					<p>Restaurant reservations</p>
+				</a>
+				<a class="footer-links">
+					<p>Booking.com for Travel Agents</p>
+				</a>
+			</div>
+			<div >
+				<a class="footer-links">
+					<p>About Booking.com</p>
+				</a>
+				<a class="footer-links">
+					<p>Contact Customer Service</p>
+				</a>
+				<a class="footer-links">
+					<p>Partner help</p>
+				</a>
+				<a class="footer-links">
+					<p>Careers</p>
+				</a>
+				<a class="footer-links">
+					<p>Sustainability</p>
+				</a>
+				<a class="footer-links">
+					<p>Press Center</p>
+				</a>
+				<a class="footer-links">
+					<p>Safety Resource Center</p>
+				</a>
+				<a class="footer-links">
+					<p>Investor relations</p>
+				</a>
+			</div>
+		</div>
+		<p id="copyright-value">Copyright © 1996–2021 Booking.com™. All rights reserved.</p>
+	</footer>
+
+	<script src="stays.js"></script>
+	<script src="general.js"></script>
+</body>
+
+
+
+</html>

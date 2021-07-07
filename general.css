@@ -1,0 +1,209 @@
+ html{   
+    width: : 100%;
+    height: 100%;
+    background-color: #F0ECEC;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+
+body{
+	margin: 0px;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+.logo-icon{
+	width: 250px;
+  height: 170px;
+  margin-top: -50px;
+}
+
+.top-div{
+	height: 130px; 
+	padding: 0px 70px; 
+  background-color: #fff;
+}
+
+#logo-flex-div{
+  display: flex; 
+  width: 100%;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.main-menu-item{
+	padding: 0px 20px;
+  font-size: 18px;
+  color: #003580;
+  font-weight: 600;
+  text-decoration: none;
+  pointer-events: pointer;
+}
+
+
+.main-menu{
+	display: flex;
+  align-items: center;
+}
+
+.main-menu:before{
+    display: block;
+    opacity: .5;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -7.5px;
+    right: 0;
+    bottom: calc(100% + 10px);
+    left: 0;
+    background-color: #0091ea;
+}
+
+
+.top-buttons{
+	padding-top: 15px;
+}
+
+.new-user-btn{
+    background-color: #009fe3;
+    border: 1px solid #009fe3;
+    color: #fff;
+    border-radius: 20px;
+    width: 145px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.new-user-btn:hover,
+.login-btn:hover{
+	 opacity:0.8;
+   filter:none;
+}
+
+.login-btn{
+	color: #fff;
+  background-color: #003580;
+  border-color: #003580;
+	border-radius: 20px;
+	width: 145px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: 600;
+  cursor: pointer;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color:#0071c2;
+}
+
+#footer-flex-div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.footer-links{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: left;
+}
+
+.footer-links:hover{
+  color: #bc5b01;
+}
+
+#copyright-value{
+  color: #666;
+}
+
+ #menu-nav{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+#toggle{
+  display: block;
+  font-size: 25px;
+  right: 20px;
+  position: absolute;
+  top: 10px;
+}
+
+#menu{
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  padding: 10px;
+  background-color: #ECECEC;
+}
+
+.new-user-btn,
+.login-btn{
+  display: none;
+}
+
+ #menu-nav{
+    display: block;
+}
+
+li a {
+  text-decoration: none;
+  color: #003580;
+  font-size: 12px;
+}
+
+li::marker{
+  display: none;
+  color: #fff;
+}
+
+
+}

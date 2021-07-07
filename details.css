@@ -1,0 +1,167 @@
+.prev, 
+.next{
+	cursor: pointer;
+	position: absolute;
+	top: 42%;
+	width: auto;
+	padding: 16px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	transition: 0.6s ease;
+}
+
+.next{
+	right: 0;
+}
+
+.prev:hover, 
+.next:hover{
+	background-color: rgba(0,0,0,0.8);
+	color: #059;
+}
+
+.mySlides > img{
+	width: auto;
+	height: 100%;
+	object-fit: cover;
+}
+
+#dot-container{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active{
+	background-color: #059;
+}
+
+.dot:hover{
+	transform: scale(1.2);
+}
+
+.fa{
+	font-size: 30px !important;
+}
+
+.fa-star {
+	font-size: 1.4em;
+	color: #dabd18b2;
+	transition: filter linear .3s;
+}
+
+.review-card{
+	margin: 30px;
+	background-color: #F5F5F5;
+	max-height: 570px;
+	min-width: 75px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	min-width: 225px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+}
+
+.card-container{
+	width: 50%;
+	margin: 30px;
+	background-color: #fff;
+	min-width: 75px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	min-width: 225px;
+	position: relative;
+	font-size: 12px;
+}
+
+#image-container{
+	max-height: 570px;
+	overflow: hidden;
+}
+
+.review-container{
+	max-height: 455px;
+	overflow-y: scroll;
+}
+
+#desc-container{
+	padding: 20px;
+	overflow-y: scroll;
+	max-height: 570px;
+}
+
+.reviewer-image{
+	width: 150px; 
+	border-radius: 20px;
+	padding: 20px; 
+	height: 150px;
+}
+
+.reviewer-stars{
+	padding: 0px 20px 20px 20px; 
+	width: 150px; 
+	text-align: center;
+}
+
+.reviewer-text{
+	width: 80%; 
+	padding: 20px 20px 20px 0px;
+}
+
+#book-button{
+	background-color: #009fe3;
+	border: 1px solid #009fe3;
+	color: #fff;
+	border-radius: 20px;
+	width: 100px;
+	height: 25px;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.btn-container{
+	text-align: right;
+    margin-top: 20px;
+}
+
+.room-image{
+	width: 200px; 
+	border-radius: 20px;
+	padding: 20px; 
+	height: 150px;
+}
+
+.main-div{
+	display: flex;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+.card-container{
+	width: 90%;
+}
+
+.main-div{
+	display: block;
+}
+
+
+
+}
